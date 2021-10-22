@@ -8,13 +8,15 @@ console.log(hamburgerIconBars, hamburgerIconTimes, hamburgerMenu);
 // mostrare menu
 hamburgerIconBars.addEventListener("click",
     function() {
-        hamburgerMenu.style.display = "block";
+        hamburgerMenu.classList.add("active");
     }
 );
+
 
 // nascondere menu
 hamburgerIconTimes.addEventListener("click",
     function() {
-        hamburgerMenu.style.display = "none";
+        hamburgerMenu.classList.remove("active");
     }
 );
+
